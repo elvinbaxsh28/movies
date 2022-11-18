@@ -6,18 +6,18 @@ import { Link } from "react-router-dom"
 
 const Cards = ({movie}) => {
 
-    const [isLoanding, setIsLoanding] = useState(true)
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() =>{
         setTimeout(() => {
-            setIsLoanding(false)
+            setIsLoading(false)
         }, 1500)
     }, [])
 
 
     return <>
     {
-        isLoanding
+        isLoading
         ?
         <div className="cards">
             <SkeletonTheme color="#202020" highlightColor="#444">
